@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* Colors and styling */
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.user-list {
+  margin: 20px auto; /* Qendron në qendër */
+  max-width: 800px; /* Gjerësia maksimale e listës */
+  background-color: var(--whiteColorDeam);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.user-list h2 {
+  text-align: center; /* Qendron në qendër */
+  color: var(--textColor);
+  margin-bottom: 15px;
+}
+.user-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.user-list table th, .user-list table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--greyText);
+}
+.user-list table th {
+  background-color: var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+.user-list table tbody tr:hover {
+  background-color: var(--whiteColorDeam); /* Ngjyra kur rreshti është në hover */
+}
+.user-list table tbody tr .delete-button {
+  background-color: hsl(0, 100%, 50%); /* Ngjyrë e kuqe për butonin e fshirjes */
+  color: var(--whiteColor);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.user-list table tbody tr .delete-button:hover {
+  background-color: hsl(0, 100%, 40%); /* Ngjyrë më të errët në hover */
+}
+
+/*# sourceMappingURL=userlist.css.map */

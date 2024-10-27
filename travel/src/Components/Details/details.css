@@ -1,0 +1,78 @@
+/* Colors and styling */
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --cardHover: rgb(255, 255, 255);
+}
+
+.details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .detailsHeader {
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.details .detailsHeader h1 {
+  font-size: 2.5rem;
+  color: var(--blackColor);
+  margin-bottom: 1rem;
+}
+.details .detailsHeader .location {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--textColor);
+}
+.details .detailsHeader .location .icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--PrimaryColor);
+}
+.details .detailsHeader .fees {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--PrimaryColor);
+  margin-top: 1rem;
+}
+.details .detailsHeader .grade {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--SecondaryColor);
+  font-weight: bold;
+}
+.details .detailsImage {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+.details .detailsImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.details .detailsDescription {
+  max-width: 800px;
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--textColor);
+}
+.details .detailsDescription p {
+  line-height: 1.8;
+}
+
+/*# sourceMappingURL=details.css.map */

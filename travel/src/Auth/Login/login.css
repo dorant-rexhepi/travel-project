@@ -1,0 +1,72 @@
+/* Colors and styling */
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+/* Login Form Styling */
+.login-form {
+  background-color: var(--whiteColorDeam);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 5rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.login-form h2 {
+  text-align: center;
+  color: var(--textColor);
+  margin-bottom: 2rem;
+}
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+.login-form form input {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid var(--greyText);
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: var(--inputColor);
+}
+.login-form form input:focus {
+  border-color: var(--PrimaryColor);
+  outline: none;
+}
+.login-form form button {
+  padding: 0.8rem;
+  background-color: var(--PrimaryColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.login-form form button:hover {
+  background-color: var(--SecondaryColor);
+}
+.login-form p {
+  text-align: center;
+  margin-top: 1rem;
+}
+.login-form p .signup-link {
+  color: var(--PrimaryColor);
+  text-decoration: none;
+  font-weight: bold;
+}
+.login-form p .signup-link:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=login.css.map */

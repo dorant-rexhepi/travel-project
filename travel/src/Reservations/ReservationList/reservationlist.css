@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.reservation-list {
+  margin: 200px auto;
+  max-width: 600px;
+  background-color: var(--whiteColorDeam);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.reservation-list h2 {
+  text-align: center; /* Qendron në qendër */
+  color: var(--textColor);
+}
+.reservation-list ul {
+  list-style-type: none; /* Heq pikat nga lista */
+  padding: 0;
+}
+.reservation-list ul li {
+  display: flex;
+  justify-content: space-between; /* Shtyp butonin në të djathtën */
+  align-items: center; /* Qëndron në qendër vertikalisht */
+  padding: 10px;
+  border-bottom: 1px solid var(--greyText);
+  background-color: var(--whiteColor); /* Ngjyra e sfondit për secilën rezervim */
+  border-radius: 5px; /* Rrethimi i skajve për secilën rezervim */
+}
+.reservation-list ul li:last-child {
+  border-bottom: none; /* Hiq kufirin e fundit */
+}
+.reservation-list ul li .delete-button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: hsl(0, 100%, 50%); /* Ngjyrë e kuqe për butonin e fshirjes */
+  color: var(--whiteColor);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.reservation-list ul li .delete-button:hover {
+  background-color: hsl(0, 100%, 40%); /* Ngjyrë më të errët në hover */
+}
+
+/*# sourceMappingURL=reservationlist.css.map */

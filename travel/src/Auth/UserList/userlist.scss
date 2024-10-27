@@ -1,0 +1,81 @@
+/* Colors and styling */
+:root{
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(0, 0%, 90%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+.dark-mode {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 10%);
+    --blackColor: hsl(0, 0%, 90%);
+    --textColor: hsl(0, 0%, 90%);
+    --whiteColorDeam: hsl(0, 0%, 20%);
+    --greyText: rgb(100, 100, 100);
+    --inputColor: rgb(50, 50, 50);
+    --bodyColor: rgb(30, 30, 30);
+    --cardBG: rgb(50, 50, 50);
+}
+
+.user-list {
+    margin: 20px auto; /* Qendron në qendër */
+    max-width: 800px; /* Gjerësia maksimale e listës */
+    background-color: var(--whiteColorDeam);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        text-align: center; /* Qendron në qendër */
+        color: var(--textColor);
+        margin-bottom: 15px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--greyText);
+        }
+
+        th {
+            background-color: var(--PrimaryColor);
+            color: var(--whiteColor);
+        }
+
+        tbody {
+            tr {
+                &:hover {
+                    background-color: var(--whiteColorDeam); /* Ngjyra kur rreshti është në hover */
+                }
+
+                .delete-button {
+                    background-color: hsl(0, 100%, 50%); /* Ngjyrë e kuqe për butonin e fshirjes */
+                    color: var(--whiteColor);
+                    border: none;
+                    padding: 5px 10px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: hsl(0, 100%, 40%); /* Ngjyrë më të errët në hover */
+                    }
+                }
+            }
+        }
+    }
+}

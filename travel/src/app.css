@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Colors and styling */
+:root{
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(0, 0%, 90%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+.dark-mode {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 10%);
+    --blackColor: hsl(0, 0%, 90%);
+    --textColor: hsl(0, 0%, 90%);
+    --whiteColorDeam: hsl(0, 0%, 20%);
+    --greyText: rgb(100, 100, 100);
+    --inputColor: rgb(50, 50, 50);
+    --bodyColor: rgb(30, 30, 30);
+    --cardBG: rgb(50, 50, 50);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.section{
+    padding: 4rem, 0 2rem;
+}
+
+.constainer{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.btn{
+    padding: .6rem 1.5rem;
+    background: var(--gradientColor);
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn a{
+    color: var(--whiteColor);
+    font-weight: 500;
+}
+
+.btn:hover{
+    background: var(--SecondaryColor);
+}
+
+img, video{
+    width: 100%;
+    height: auto;
+}
+
+input{
+    font-size: 100%;
+}
+
+body{
+    background-color: var(--bodyColor);
+}
+
+@media screen and(min-width: 1240px) {
+    .constainer{
+        width: 80% !important;
+        margin: auto !important;
+    }
+
+    .section{
+        padding: 6rem 0 4rem;
+    }
+}
+
+@media screen and(min-width: 2560px) {
+    body{
+        zoom: 1.7;
+    }
+}
+
+
+
+  /* Reservation form styling */
+  .reservationForm {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    z-index: 1000;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  
+    .formContainer {
+      display: flex;
+      flex-direction: column;
+  
+      .closeButton {
+        align-self: flex-end;
+        background: none;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        margin-bottom: 1rem;
+  
+        &:hover {
+          color: red;
+        }
+      }
+  
+      h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+        color: #333;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+  
+        input {
+          margin-bottom: 1rem;
+          padding: 0.75rem;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        }
+  
+        button {
+          padding: 0.75rem;
+          background-color: var(--PrimaryColor);
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: var(--SecondaryColor);
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,80 @@
+/* Colors and styling */
+:root{
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(0, 0%, 90%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+.dark-mode {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 10%);
+    --blackColor: hsl(0, 0%, 90%);
+    --textColor: hsl(0, 0%, 90%);
+    --whiteColorDeam: hsl(0, 0%, 20%);
+    --greyText: rgb(100, 100, 100);
+    --inputColor: rgb(50, 50, 50);
+    --bodyColor: rgb(30, 30, 30);
+    --cardBG: rgb(50, 50, 50);
+}
+
+.reservationForm {
+    max-width: 400px;
+    padding: 80px 20px 20px; /* Shton padding më të madh lart */
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: var(--whiteColorDeam);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: var(--textColor);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        input {
+            padding: 10px;
+            border: 1px solid var(--greyText);
+            border-radius: 5px;
+            background-color: var(--inputColor);
+            font-size: 16px;
+
+            &:focus {
+                outline: none;
+                border-color: var(--PrimaryColor);
+            }
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--PrimaryColor);
+            color: var(--whiteColor);
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: var(--SecondaryColor);
+            }
+        }
+    }
+}

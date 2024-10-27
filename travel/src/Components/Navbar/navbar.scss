@@ -1,0 +1,279 @@
+/* Colors and styling */
+:root{
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(0, 0%, 90%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+.dark-mode {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 10%);
+    --blackColor: hsl(0, 0%, 90%);
+    --textColor: hsl(0, 0%, 90%);
+    --whiteColorDeam: hsl(0, 0%, 20%);
+    --greyText: rgb(100, 100, 100);
+    --inputColor: rgb(50, 50, 50);
+    --bodyColor: rgb(30, 30, 30);
+    --cardBG: rgb(50, 50, 50);
+}
+
+/* Header and Navbar styling */
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--whiteColorDeam);
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.242);   
+
+    .logo {
+        color: var(--blackColor);
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+            font-size: 25px;
+            color: var(--PrimaryColor);
+            margin-right: 0.5rem;
+        }
+    }
+
+    .navBar {
+        display: flex;
+        align-items: center;
+
+        .navLists {
+            display: flex;
+            list-style: none;
+
+            .navItem {
+                margin-right: 1.5rem;
+
+                .navLink {
+                    color: var(--textColor);
+                    font-weight: 500;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: var(--PrimaryColor);
+                    }
+                }
+            }
+        }
+
+        .btn {
+            background-color: var(--PrimaryColor);
+            color: var(--textColor);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: var(--textColor);
+            }
+        }
+    }
+
+    /* Shtimi i stilizimit për butonin Dark Mode */
+    .toggle-dark-mode {
+        margin-left: 1.5rem; /* Distanca nga butoni për llogari */
+        
+        .btn {
+            background-color: var(--PrimaryColor);  /* Sfoni i butonit për modalitetin fillestar */
+            color: var(--textColor);  /* Ngjyra e tekstit në buton */
+            padding: 1.5rem 1rem;  /* Madhësia e butonit */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;  /* Ndryshimi i sfondit me kalim kohe */
+    
+            &:hover {
+                background-color: var(--SecondaryColor);  /* Ngjyra e sfondit kur bëhet hover */
+            }
+        }
+    }
+
+    .toggleNavbar {
+        display: none;
+
+        .icon {
+            font-size: 25px;
+            color: var(--PrimaryColor);
+            cursor: pointer;
+
+            &:hover {
+                color: var(--SecondaryColor);
+            }
+        }
+    }
+
+    .auth-buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 1.5rem; /* Distanca nga butoni BOOK NOW */
+
+        /* Butoni për Account që të ridrejton */
+        .auth-btn {
+            background-color: var(--PrimaryColor); /* Ngjyra e sfondit */
+            border: none;
+            color: var(--textColor);
+            padding: 10px; /* Madhësia e butonit */
+            border-radius: 50%; /* E bën butonin të rrumbullakët */
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px; /* Bëje të barabartë gjerësinë dhe lartësinë */
+            height: 50px; /* Për të krijuar një formë të rrumbullakët */
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: var(--SecondaryColor);
+            }
+
+            .icon {
+                font-size: 24px; /* Madhësia e ikonës */
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .navBar {
+            position: absolute;
+            background: var(--whiteColorDeam);
+            height: max-content;
+            width: 80%;
+            border-radius: 1rem;
+            top: -500rem;
+            left: 50%;
+            padding: 1rem;
+            transform: translate(-50%);
+            z-index: 2000;
+            box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+            transition: 0.5s ease-in-out;
+
+            .navLists {
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin: auto;
+                padding: 0.5rem 0;
+
+                .navItem {
+                    padding: 0.5rem 0;
+
+                    .navLink {
+                        color: var(--textColor);
+                        font-weight: 600;
+
+                        &:hover {
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+
+                .btn {
+                    margin-top: 1rem;
+                }
+            }
+
+            .closeNavbar {
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+                color: var(--PrimaryColor);
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--SecondaryColor);
+                }
+            }
+        }
+
+        .activeNavbar {
+            top: 7rem;
+        }
+
+        .toggleNavbar {
+            display: block;
+
+            .icon {
+                font-size: 25px;
+                color: var(--PrimaryColor);
+                cursor: pointer;
+            }
+
+            &:hover .icon {
+                color: var(--SecondaryColor);
+            }
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        .toggleNavbar, .closeNavbar {
+            display: none;
+        }
+
+        .header {
+            padding: 1.5rem 2rem;
+
+            .navBar {
+                .navLists {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+
+                    .navItem {
+                        .navLink {
+                            color: var(--textColor);
+                            padding: 0 0.45rem;
+                            font-size: 0.9rem;
+                            font-weight: 500;
+
+                            &:hover {
+                                color: var(--PrimaryColor);
+                            }
+                        }
+                    }
+
+                    .btn {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        .header .navBar .navLists .navItem {
+            padding: 0 0.7rem;
+        }
+    }
+
+    @media screen and (min-width: 1240px) {
+        .header {
+            padding: 1rem 8.5rem;
+        }
+    }
+}

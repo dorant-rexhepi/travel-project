@@ -1,0 +1,47 @@
+{
+  "name": "travel",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
+    "axios": "^1.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^6.26.2",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "sass": "sass --watch src/Components/Main/main.scss src/Components/Main/main.css --source-map && sass --watch src/Components/Navbar/navbar.scss src/Components/Navbar/navbar.css --source-map && sass --watch src/Components/Home/home.scss src/Components/Home/home.css --source-map && sass --watch src/Components/Footer/footer.scss src/Components/Footer/footer.css --source-map && sass --watch src/Components/Details/details.scss src/Components/Details/details.css --source-map && sass --watch src/Components/About/about.scss src/Components/About/about.css --source-map && sass --watch src/Components/Contact/contact.scss src/Components/Contact/contact.css --source-map && sass --watch src/Components/News/news.scss src/Components/News/news.css --source-map && sass --watch src/Components/Packages/packages.scss src/Components/Packages/packages.css --source-map && sass --watch src/Components/Pages/pages.scss src/Components/Pages/pages.css --source-map && sass --watch src/Components/Shop/shop.scss src/Components/Shop/shop.css --source-map && sass --watch src/Reservations/ReservationForm/reservationform.scss src/Reservations/ReservationForm/reservationform.css --source-map && sass --watch src/Reservations/ReservationList/reservationlist.scss src/Reservations/ReservationList/reservationlist.css --source-map && sass --watch src/Auth/Login/login.scss src/Auth/Login/login.css --source-map && sass --watch src/Auth/Signup/signup.scss src/Auth/Signup/signup.css --source-map && sass --watch src/Auth/UserList/userlist.scss src/Auth/UserList/userlist.css --source-map"
+},
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "sass": "^1.79.4"
+  }
+}

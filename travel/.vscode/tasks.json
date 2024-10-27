@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [],
+			"label": "npm: start",
+			"detail": "react-scripts start"
+		},
+		{
+			"type": "npm",
+			"script": "sass",
+			"problemMatcher": [
+				"$node-sass"
+			],
+			"label": "npm: sass",
+			"detail": "sass --watch src/Components/Main/main.scss src/Components/Main/main.css --source-map & sass --watch src/Components/Navbar/navbar.scss src/Components/Navbar/navbar.css --source-map & sass --watch src/Components/Home/home.scss src/Components/Home/home.css --source-map & sass --watch src/Components/Footer/footer.scss src/Components/Footer/footer.css --source-map & sass --watch src/Components/ReservationForm/reservationform.scss"
+		}
+	]
+}
